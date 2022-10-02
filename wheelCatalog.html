@@ -49,8 +49,28 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
+                <div class="col-md-6">
+                    <div id="stl_wheelRight-1" style="width: 100%;height: 300px;"></div>        <script src="viewstl/stl_viewer.min.js"></script>
+        <script src="viewstl/OrbitControls.js"></script> 
+        <script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_wheelRight"),
+                {
+                    models:
+                    [
+                        {filename:"/spaceapp2022/models/RoverWheelRighLeft.stl", rotationx:0.5, rotationy:0.5, rotationz:0.5, animation:{delta:{rotationx:1, msec:3000, loop:false}}}
+                    ]
+                }
+            );
+        </script>
+                    <div class="py-4"><span class="badge bg-primary mb-2">Wheel</span>
+                        <h4 class="fw-bold"><strong>Rover Right/Left wheel</strong><br></h4>
+                        <p class="text-muted">Wheel with morse code and arrow indicating where it goes.<br>Depending on how the wheel and center piece are assembled, it becomes a right or left wheel.&nbsp;Due to the wheel size not being specified, we have added both 5 and 20 inch sizes.</p>
+                        <p class="text-muted">The file includes a wheel and a coupling of the wheel to the Rover axle.<br></p><a class="btn btn-primary shadow" role="button" href="/spaceapp2022/models/RoverWheel5inch.zip">Download Parts 5inch</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
                     <div id="stl_wheelRight" style="width: 100%;height: 300px;"></div>        <script src="viewstl/stl_viewer.min.js"></script>
         <script src="viewstl/OrbitControls.js"></script> 
         <script>
@@ -68,10 +88,9 @@
                     <div class="py-4"><span class="badge bg-primary mb-2">Wheel</span>
                         <h4 class="fw-bold"><strong>Rover Right/Left wheel</strong><br></h4>
                         <p class="text-muted">Wheel with morse code and arrow indicating where it goes.<br>Depending on how the wheel and center piece are assembled, it becomes a right or left wheel.&nbsp;Due to the wheel size not being specified, we have added both 5 and 20 inch sizes.</p>
-                        <p class="text-muted">The file includes a wheel and a coupling of the wheel to the Rover axle.<br></p><a class="btn btn-primary shadow" role="button" href="/spaceapp2022/models/RoverWheel5inch.zip">Download Parts 5inch</a><a class="btn btn-primary shadow" role="button" href="/spaceapp2022/models/RoverWheel20inchWithoutSupports.zip" style="margin-top: 5px;">Download Parts 20inch</a>
+                        <p class="text-muted">The file includes a wheel and a coupling of the wheel to the Rover axle.<br></p><a class="btn btn-primary shadow" role="button" href="/spaceapp2022/models/RoverWheel20inchWithoutSupports.zip" style="margin-top: 5px;">Download Parts 20inch</a>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
             </div>
         </div>
         <div class="container">
