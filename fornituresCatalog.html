@@ -241,6 +241,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="col mb-4">
+                    <div id="stl_hexagon" style="width: 100%;height: 300px;"></div>        <script src="viewstl/stl_viewer.min.js"></script>
+        <script src="viewstl/OrbitControls.js"></script> 
+        <script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_hexagon"),
+                {
+                    models:
+                    [
+                        {filename:"/spaceapp2022/models/HEXAGONOSUPERFICIE.STL", rotationx:0.5, rotationy:0.5, rotationz:0.5, animation:{delta:{rotationx:1, msec:3000, loop:false}}}
+                    ]
+                }
+            );
+        </script>
+                    <div><a href="#"></a>
+                        <div class="py-4"><span class="badge bg-primary mb-2">Accessory</span>
+                            <h4 class="fw-bold">Hexagon</h4>
+                            <p class="text-muted"><strong>Regolith concrete solar panel support 45º</strong><br>Base 1mx1m&nbsp;Height 1.5m<br>This structure is built on the outside of the habitats.<br>External structure.<br></p><a class="btn btn-primary shadow" role="button" href="/spaceapp2022/models/SOPORTEPANELSOLARREGOLITO.STL">Download Parts</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
